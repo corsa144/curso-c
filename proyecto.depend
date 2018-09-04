@@ -1,0 +1,7 @@
+# depslib dependency file v1.0
+1536020151 source:d:\corsaro\clase 4\proyecto\funciones.c
+
+1446667744 source:d:\corsaro\clase 4\proyecto\main.c
+	<stdio.h>
+	<stdlib.h>
+
