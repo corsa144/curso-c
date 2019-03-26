@@ -1,20 +1,35 @@
     #include <stdio.h>
     #include <stdlib.h>
-    #define cant 5
+
+    int factorial(int );
 
     int main()
     {
-        int legajo[cant];
-        float salario[cant];
-        char nombre[cant][31];
 
-        for (i=0;i<cant;i++)
-        {
-            printf("legajo: ");
-            scanf("%d",&legajo[i]):
-            printf("salario: ");
-            scanf("%f",&salario[i]);
-            fgets(nombre[i],)
-        }
+        int valor,result;
+        printf("\nIngrese numero:");
+        scanf("%d",&valor);
+        result=factorial(valor);
+        printf("\nEl factorial de %d es %d",valor,result);
         return 0;
     }
+    int factorial(int n)
+    {
+        /*int resp;
+        if(n==1)
+        return 1;
+        resp=n* factorial(n-1);
+        return (resp);*/
+        /*int resp=1,i;
+        for (i=n;i>0;i--){
+            resp=resp*i;
+
+        }
+        return resp;*/
+        int resp=n,i;
+        for(i=1;i<n;i++){
+            resp=resp*i;
+        }
+        return resp;
+    }
+
