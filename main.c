@@ -1,15 +1,21 @@
-    #include <stdio.h>
-    #include <stdlib.h>
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
 
-    int main()
-    {
+int main()
+{
+    char buffer[64];
+    int cantidad;
 
-        int valor,result;
-        printf("\nIngrese numero:");
-        scanf("%d",&valor);
-        result=factorial(valor);
-        printf("\nEl factorial de %d es %d",valor,result);
-        return 0;
-    }
+    printf("Nombre: ");
+    //fgets(buffer, 62, stdin);
+    fgets(buffer,sizeof(buffer)-2,stdin);
 
+    cantidad = strlen(buffer);
 
+    buffer[cantidad-1] = '\0';
+
+    printf("%s", buffer);
+
+    return 0;
+}
